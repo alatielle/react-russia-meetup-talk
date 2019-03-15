@@ -1,0 +1,51 @@
+img.center
+{
+    display: block;
+    margin: 0 auto !important;
+}
+
+.ya-letter::first-letter
+{
+    color: #f00;
+}
+
+.screenshot
+{
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.07), 0 7px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cloud-tags
+{
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cloud-tags span
+{
+    padding: 10px;
+}
+
+.scaled
+{
+    transform: scale(.9);
+    transform-origin: 0 0;
+}
+
+.reveal .slides section .fragment.blue-filter,
+.reveal .slides section .fragment.pink-filter
+{
+    opacity: 1;
+    visibility: inherit
+}
+
+.reveal .slides section .fragment.blue-filter.visible
+{
+    filter: hue-rotate(220deg);
+}
+
+.reveal .slides section .fragment.pink-filter.visible
+{
+    filter: hue-rotate(-150deg);
+}

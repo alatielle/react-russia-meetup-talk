@@ -1,2 +1,2 @@
-# react-russia-meetup-talk
-Доклад про компоненты для React Russia
+# Компоненты для компонентов
+Слайды для доклада на React Russia

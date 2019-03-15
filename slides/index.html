@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Компоненты для&nbsp;компонентов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../@lib/core.css">
+    <link rel="stylesheet" href="../@lib/theme.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="white"><div class="reveal"><div class="slides">
+
+    <section class="center">
+        <h1>Компоненты для&nbsp;компонентов</h1>
+
+        <div class="ya-letter" style="text-align: center; font-size: .9em">Лена Рашкован</div>
+    </section>
+
+    <section class="center">
+        <h1>О чём расскажу 🗒</h1>
+    </section>
+
+    <section class="center" data-background="rgb(255,204,0)">
+        <h1>Яндекс.Образование</h1>
+    </section>
+
+    <section class="center" style="transform: scale(.8); padding: 0">
+        <img class="fragment screenshot" src="images/textbook.png" width="49%" />
+        <img class="fragment screenshot" src="images/lyceum.png" width="49%"/>
+        <img class="fragment screenshot" src="images/contest.png" width="49%"/>
+        <img class="fragment screenshot" src="images/praktikum.gif" width="49%" />
+    </section>
+
+    <section class="center">
+        <p>Между разными проектами<br>элементы интерфейса выглядят<br>и ведут себя по-разному</p>
+
+        <br>
+
+        <div style="display: flex; justify-content: space-around; align-items: flex-start;">
+            <img class="fragment" src="images/select-lego.png" width="15%" />
+            <img class="fragment" src="images/select-textbook.png" width="15%" />
+            <img class="fragment" src="images/select-contest.png" width="32%" />
+        </div>
+    </section>
+
+    <section class="center">
+        <p style="font-size: 1.5em">Какими должны быть<br>наши компоненты?</p>
+    </section>
+
+    <section class="center">
+        <p class="grey">Требование раз:</p>
+        <img class="center fragment" src="images/react-logo.png" width="75%"/>
+    </section>
+
+    <section class="center">
+        <p class="grey">Требование два:</p>
+        <h1 class="fragment">Типизация кода</h1>
+    </section>
+
+    <section class="center">
+        <img class="center screenshot" src="images/typescript-love-stages.png" />
+    </section>
+
+    <section class="center">
+        <img class="center screenshot" src="images/typescript-love-stage-1.png" />
+
+        <img class="center fragment screenshot" src="images/typescript-love-stage-3.png" />
+    </section>
+
+    <section class="center">
+        <p class="grey">Требование три:</p>
+        <h1 class="fragment">Документация</h1>
+    </section>
+
+    <section class="center">
+        <img class="center" src="images/documentation.jpg" width="50%" />
+    </section>
+
+    <section class="center">
+        <h2>Хорошая документация</h2>
+
+        <p class="cloud-tags fragment">
+            <span class="green">подробная</span>
+            <span class="green">наглядная</span>
+            <span class="green">актуальная</span>
+        </p>
+
+        <br>
+
+        <p class="fragment">
+            У <a href="http://tech.skbkontur.ru/react-ui/">React UI</a> хорошая дока на <a href="https://github.com/styleguidist/react-styleguidist">Styleguidist 👍</a>
+        </p>
+    </section>
+
+    <section class="center">
+        <p class="grey">Требование четыре:</p>
+        <h1 class="fragment">Покрытие тестами</h1>
+    </section>
+
+    <section class="center">
+        <h2>Тесты</h2>
+
+        <p class="cloud-tags">
+            <span class="green fragment">на js-логику</span>
+            <span class="green fragment">&nbsp;&nbsp;скриншотные</span>
+        </p>
+
+        <br>
+
+        <p class="fragment">
+            <a href="https://tech.yandex.ru/hermione/">📖 https://tech.yandex.ru/hermione</a>
+        </p>
+    </section>
+
+    <section class="center">
+        <p class="grey">Требование пять:</p>
+        <h1 class="fragment">Правильная вёрстка</h1>
+    </section>
+
+    <section class="center">
+        <img class="center screenshot" src="images/makeev-tweet.png" width="75%" />
+    </section>
+
+    <section class="center">
+        <img class="center screenshot" src="images/makeev-tweet-2.png" width="75%" />
+    </section>
+
+    <section class="center" data-background-image="images/makeev.gif">
+        <br>
+        <br>
+        <br>
+        <div style="color: #fff">Счастливый Вадим Макеев</div>
+    </section>
+
+    <section class="center">
+        <p class="grey">Требование шесть:</p>
+        <h1 class="fragment">Расширяемость</h1>
+    </section>
+
+    <section class="center" data-background-image="images/meeting-flip.png">
+        <h1 style="color: #fff;">Композиция!</h1>
+    </section>
+
+    <section class="center" data-background-image="images/meeting.png">
+        <h1 style="color: #fff;">Наследование!</h1>
+    </section>
+
+    <section class="center">
+        <img class="center screenshot" src="images/dan-for-composition.png" />
+    </section>
+
+    <section class="center">
+        <p style="font-size: 1.5em">Откуда в коде на React так много наследования? 🤔</p>
+    </section>
+
+    <section class="center">
+        <h1>🙋‍♂️🙋‍♀️</h1>
+    </section>
+
+    <section class="center">
+        <p>Основная концепция ООП</p>
+
+        <br>
+
+        <img class="center" src="images/oop.jpg" />
+    </section>
+
+    <section class="center">
+        <img class="center" src="images/uni-hierarchy.png" />
+    </section>
+
+    <section class="center">
+        <h1>Control</h1>
+
+        <p class="fragment cloud-tags">
+            <span class="magenta">focus</span>
+            <span class="magenta">blur</span>
+            <span class="magenta">press</span>
+            <span class="magenta">hover</span>
+            <span class="magenta">disable</span>
+        </p>
+
+        <br>
+        <div class="fragment"><span class="grey">1. </span>класс на <a href="https://ru.bem.info/technologies/classic/i-bem">i-bem</a></div>
+        <div class="fragment"><span class="grey">2. </span>класс на React</div>
+        <div class="fragment"><span class="grey">3. </span>HOC на React<span class="grey">&nbsp;&nbsp;← мы находимся здесь</span></div>
+        <div class="fragment"><span class="grey">4. </span>💨</div>
+    </section>
+
+    <section class="center">
+        <p class="fragment strike" data-fragment-index="1" style="font-size: 1.5em">наследование</p>
+        <p class="fragment" data-fragment-index="1" style="font-size: 1.5em">композиция</p>
+    </section>
+
+    <section class="center">
+        <pre class="js"><code data-trim data-noescape="">class Button extends React.Component { /* ... */ }</code></pre>
+        <pre class="js fragment"><code data-trim data-noescape="">class LaunchButton extends Button {
+    onClick() {
+        launchSomethingIntoSpace();
+    }
+}</code></pre>
+        <pre class="js fragment"><code data-trim data-noescape="">class LaunchWithCautionButton extends LaunchButton {
+    onClick() {
+        checkAllTheSystems();
+        <mark>super.onClick()</mark>;
+    }
+}</code></pre>
+    </section>
+
+    <section class="center">
+        <pre class="js"><code data-trim data-noescape="">function Button({ onClick }) { /* ... */ }</code></pre>
+        <pre class="js fragment"><code data-trim data-noescape="">import {
+    checkAllTheSystems,
+    launchSomethingIntoSpace
+} from 'space-utils';</code></pre>
+        <pre class="js fragment"><code data-trim data-noescape="">function LaunchWithCautionButton() {
+    const checkAndLaunch = () => {
+        checkAllTheSystems();
+        launchSomethingIntoSpace();
+    };
+
+    return &lt;Button onClick={checkAndLaunch} ... />
+}</code></pre>
+    </section>
+
+    <section class="center">
+        <p>
+            <span class="grey">наследование</span><span style="font-size: 3em"> 1 : 1 </span><span class="grey">композиция</span>
+        </p>
+    </section>
+
+    <section class="center">
+        <pre class="js"><code data-trim data-noescape="">class FancyButton extends Button {
+    render() { /* ... */ }
+}</code></pre>
+
+        <img class="fragment" src="images/button.png" />
+
+        <pre class="js fragment"><code data-trim data-noescape="">class ButtonWithIcon extends FancyButton {
+    render() {
+        return &lt;>{<mark>super.render()</mark>} <span>❤️</span>&lt;/>
+}</code></pre>
+
+        <img class="fragment" src="images/button-icon-bad.png" />
+    </section>
+
+    <section class="center">
+        <pre class="js"><code data-trim data-noescape="">function FancyButton({ children }) {
+    return &lt;button className="fancy">{children}&lt;/button>
+}</code></pre>
+
+        <img src="images/button.png" />
+
+        <pre class="js fragment"><code data-trim data-noescape="">function ButtonWithIcon({ text, icon }) {
+    return &lt;FancyButton>{text}{icon}&lt;FancyButton/>
+}</code></pre>
+
+        <img class="fragment" src="images/button-icon-good.png" />
+    </section>
+
+    <section class="center">
+        <p>
+            <span class="grey">наследование</span><span style="font-size: 3em"> 1 : 2 </span><span class="grey">композиция</span>
+        </p>
+    </section>
+
+    <section class="center">
+        <pre class="js"><code data-trim data-noescape="">class Input extends Control { /* ... */ }</code></pre>
+        <pre class="js fragment"><code data-trim data-noescape="">class ValidatedInput extends Input { /* ... */ }</code></pre>
+        <pre class="js fragment"><code data-trim data-noescape="">class DateInput extends ValidatedInput { /* ... */ }</code></pre>
+        <pre class="js fragment"><code data-trim data-noescape="">class DateRangeInput extends <mark>???</mark> { /* ... */ }</code></pre>
+    </section>
+
+    <section class="center">
+        <pre class="js"><code data-trim data-noescape="">function Input({ value, onChange }) { /* ... */ }</code></pre>
+        <pre class="js fragment"><code data-trim data-noescape="">function ValidatedInput({ value, onChange, isValid }) {
+    return &lt;Input ... />
+}</code></pre>
+        <pre class="js fragment"><code data-trim data-noescape="">function DateInput({ value, onChange }) {
+    return &lt;ValidatedInput ... />
+}</code></pre>
+        <pre class="js fragment"><code data-trim data-noescape="">function DateRangeInput({ value, onChange }) {
+    return &lt;>
+        &lt;DateInput value={value.start} ... />
+        &lt;DateInput value={value.end} ... />
+    &lt;/>
+}</code></pre>
+    </section>
+
+    <section class="center">
+        <p>
+            <span class="grey">наследование</span><span style="font-size: 3em"> 1 : 3 </span><span class="grey">композиция</span>
+        </p>
+    </section>
+
+    <section class="center">
+        <h1 style="font-size: 1.5em">Что мы поняли</h1>
+
+        <br>
+
+        <p class="fragment">
+            Нужно что-то переопределить?
+            <br>
+            <span class="magenta">пропсы</span>
+        </p>
+
+        <p class="fragment">
+            Нужно что-то переиспользовать?
+            <br>
+            <span class="green">композиция</span>
+        </p>
+    </section>
+
+    <section class="center">
+        <h2>Пропсом может быть что угодно</h2>
+
+        <br>
+
+        <p class="fragment">
+            <span class="magenta">42</span>, <span class="red">"foo"</span>, <span class="grey">true</span>, undefined, <span class="magenta">null</span>, <span class="grey">{ ... }</span>
+        </p>
+
+        <p class="fragment">
+            &lt;<span class="green">User</span> name=<span class="red">"Вася"</span> /&gt;, &lt;<span class="green">div</span> /&gt;<br>
+        </p>
+
+        <p class="fragment">
+            <span class="magenta">User</span>
+        </p>
+
+        <p class="fragment">
+            <span class="red">( ) => { }</span>
+        </p>
+    </section>
+
+    <section class="center">
+        <h1>Render Props</h1>
+
+        <p class="fragment">Компонент принимает функцию,<br>которая возвращает элемент,<br>и вызывает её при рендере</p>
+
+        <br>
+
+        <p class="fragment">📖 <a href="https://reactjs.org/docs/render-props.html">reactjs.org/docs/render-props.html</a></p>
+    </section>
+
+    <section class="center">
+        <pre class="js scaled"><code data-trim data-noescape="">
+class MakeCounter extends React.Component {
+    <span class="fragment">state = { value: 0 };</span>
+
+    <span class="fragment">increment = () => {
+        this.setState(prevState => ({
+            value: prevState.value === this.props.maxValue
+                ? prevState.value
+                : prevState.value + 1
+        }));
+    };</span>
+
+    <span class="fragment">decrement = () => {
+        this.setState(prevState => ({
+            value: prevState.value === this.props.minValue
+                ? prevState.value
+                : prevState.value - 1
+        }));
+    };</span>
+}</code></pre>
+    </section>
+
+    <section class="center">
+        <pre class="js scaled"><code data-trim data-noescape="">
+class MakeCounter extends React.Component {
+    state = { value: 0 };
+
+    increment = () => { /* ... */ };
+
+    decrement = () => { /* ... */ };
+
+    render() {
+        return <mark>this.props.children</mark>({
+            value: this.state.value,
+            onIncrement: this.increment,
+            onDecrement: this.decrement,
+        });
+    }
+}</code></pre>
+    </section>
+
+    <section class="center">
+        <pre class="js"><code data-trim data-noescape="">
+const SomeComponent = ({ minValue, maxValue }) => (
+    <span class="fragment" data-fragment-index="0">&lt;MakeCounter minValue={minValue} maxValue={maxValue}&gt;</span>
+        <span class="fragment" data-fragment-index="1">{injectedProps => /* MAGIC ✨ */}</span>
+    <span class="fragment" data-fragment-index="0">&lt;/MakeCounter&gt;</span>
+);</code></pre>
+    </section>
+
+    <section class="center">
+        <pre class="js scaled"><code data-trim data-noescape="">({value, onDecrement, onIncrement}) => (
+    &lt;&gt;
+        &lt;button onClick={onDecrement}&gt;-&lt;/button&gt;
+
+        {value}
+
+        &lt;button onClick={onIncrement}&gt;+&lt;/button&gt;
+    &lt;/&gt;
+)</span></code></pre>
+
+        <img class="fragment center" src="images/counter-example.gif" >
+    </section>
+
+    <section class="center">
+        <pre class="js scaled"><code data-trim data-noescape="">({value, onIncrement}) => (
+    &lt;&gt;
+        {value > 0 ?
+            `Прошло ${value} сек` :
+            &lt;button onClick={
+                () => setInterval(onIncrement, 1000)
+            }&gt;
+                Запустить таймер
+            &lt;/button&gt;
+        )}
+    &lt;/&gt;
+)</span></code></pre>
+
+        <img class="fragment center" style="transform: scale(.8) translateY(-150px)" src="images/timer-example.gif" >
+    </section>
+
+    <section class="center">
+        <p>Что круто</p>
+
+        <p class="green fragment">инкапсуляция логики</p>
+
+        <p class="green fragment">гибкость в именовании пропсов</p>
+
+        <br>
+
+        <p class="fragment">Что не очень</p>
+
+        <p class="red fragment">нет доступа к injected props<br>из lifecycle-методов</p>
+    </section>
+
+    <section>
+        Потребитель может написать свою обёртку
+
+        <br><br>
+
+        <span class="fragment">Мы можем сгенерировать HOC</span>
+
+        <pre class="js fragment"><code data-trim>
+const makeCounter = Component => ({
+  minValue,
+  maxValue,
+  ...props
+}) => (
+  &lt;MakeCounter minValue={minValue} maxValue={maxValue}&gt;
+    {injectedProps => (
+      &lt;Component {...props} {...injectedProps} /&gt;
+    )}
+  &lt;/MakeCounter&gt;
+);</code></pre>
+    </section>
+
+    <section class="center">
+        <p style="font-size: 1.5em">Даём выбор</p>
+
+        <br>
+
+        <div class="fragment">
+            Простота использования? <span class="green">HOC: </span><pre class="fragment"><code data-trim>withSomeLogic(ConsumerComponent)</code></pre>
+        </div>
+
+        <br>
+
+        <div class="fragment">
+            Не подходит HOC? <span class="magenta">render-prop компонент: </span><pre class="fragment"><code data-trim>ConsumerComponent = () => (
+    &lt;SomeLogic>{logicProps => markup}&lt;/SomeLogic>
+)</code></pre>
+        </div>
+    </section>
+
+    <section class="center">
+        <h1>Select</h1>
+    </section>
+
+    <section>
+        <div>Поведение</div>
+
+        <br/>
+
+        <ul>
+            <li class="fragment">
+                открытие/закрытие
+                <div class="grey">with-toggle</div>
+            </li>
+
+            <li class="fragment">
+                навигация по элементам меню
+                <div class="grey">with-navigation</div>
+            </li>
+
+            <li class="fragment">
+                разные типы значений
+                <div class="grey">with-radio-value, with-check-value, with-mixed-value, ...</div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="center">
+        <img class="center" src="images/select-contest.png" />
+    </section>
+
+    <section>
+        <div>Вёрстка</div>
+
+        <br/>
+
+        <ul>
+            <li class="fragment">
+                триггер
+            </li>
+
+            <li class="fragment">
+                попап
+            </li>
+
+            <li class="fragment">
+                меню
+            </li>
+
+            <li class="fragment">
+                элементы меню
+            </li>
+        </ul>
+    </section>
+
+    <section class="center">
+        <h1>Идеи</h1>
+    </section>
+
+    <section class="center">
+        <p>
+            💡<br>
+            каждый аспект поведения выделить в отдельный компонент (render-props + HOC)
+        </p>
+
+        <p class="fragment">
+            💡<br>
+            давать визуальные компоненты по&nbsp;умолчанию, но позволять легко использовать свою вёрстку
+        </p>
+    </section>
+
+    <section class="center">
+        <p>Компонент собирается из деталей</p>
+
+        <p style="font-size: 2em">
+            <span class="fragment" data-fragment-index="0"><span class="fragment blue-filter" data-fragment-index="4">🚂</span></span><span class="fragment" data-fragment-index="1">🚃</span><span class="fragment" data-fragment-index="2"><span class="fragment pink-filter" data-fragment-index="5">🚃</span></span><span class="fragment" data-fragment-index="3">🚃</span>
+        </p>
+    </section>
+
+    <section class="center">
+        <pre class="js"><code data-trim data-noescape>
+const RadioSelect = compose(
+    withToggle,
+    withRadioValue,
+    withNavigation
+)(Select);
+</code></pre>
+
+        <img class="fragment center" style="transform: scale(.8)" src="images/radio-select.gif">
+    </section>
+
+    <section class="center">
+        <pre class="js"><code data-trim data-noescape>
+const CheckSelect = compose(
+    withToggle,
+    withCheckValue,
+    withNavigation
+)(Select);
+</code></pre>
+
+        <img class="fragment center" style="transform: scale(.8)" src="images/check-select.gif">
+    </section>
+
+    <section class="center">
+        <pre class="js"><code data-trim data-noescape>
+const MixedSelect = compose(
+    withToggle,
+    withMixedValue,
+    withNavigation
+)(Select);
+</code></pre>
+
+        <img class="fragment center" style="transform: scale(.8)" src="images/mixed-select.gif">
+    </section>
+
+    <section class="center">
+        <pre class="js"><code data-trim data-noescape="">
+&lt;div className="select"&gt;
+    &lt;Trigger isOpen={isOpen} onClick={toggleOpen}&gt;
+       {stringValue}
+    &lt;/Trigger&gt;
+
+    &lt;Popup&gt;
+        &lt;Menu
+            options={options}
+            isOptionActive={isOptionActive}
+            activateOption={activateOption}
+            isOptionSelected={isOptionSelected}
+            selectOption={handleSelect}
+        /&gt;
+    &lt;/Popup&gt;
+&lt;/div&gt;</code></pre>
+    </section>
+
+    <section class="center">
+        <h1>Combobox</h1>
+    </section>
+
+    <section class="center">
+                <pre class="js"><code data-trim data-noescape>
+const FilterableSelect = compose(
+    withToggle,
+    withFilterText,
+    withNavigation
+)(Combobox);
+</code></pre>
+
+        <img class="fragment center" style="transform: scale(.8); transform-origin: center 0" src="images/combobox.gif">
+    </section>
+
+    <section class="center">
+        <h1>Что в итоге?</h1>
+    </section>
+
+    <section class="center">
+        <p>Подход разделения компонента на детали — рабочий и используется</p>
+
+        <br>
+
+        <p class="fragment">HOC + render-props = ❤️</p>
+
+        <p class="fragment">hooks?️</p>
+    </section>
+
+    <section class="center">
+        <h1>Спасибо 🐱</h1>
+    </section>
+
+</div></div><script src="../@lib/core.js"></script>
+</body>
+</html>
